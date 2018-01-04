@@ -1,0 +1,26 @@
+//
+// List styles
+//
+
+// Unordered and Ordered lists
+ul, ol {
+    margin: 0;
+    padding: 0;
+    li {
+        color: inherit;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.list-inline {
+  list-style: none;
+
+  > li {
+    display: inline-block;
+  }
+}

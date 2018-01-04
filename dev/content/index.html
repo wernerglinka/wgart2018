@@ -1,0 +1,68 @@
+---
+title: Werner Glinka Art
+locale: en_US
+url: http://www.wernerglinka.com
+description: Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.
+name: wernerglinka
+email: wg@wernerglinka.comcom
+twitter: "wernerglinka"
+facebook: "facebookname"
+google:
+    analytics: UA-12345678-9
+    verify: 1234567890
+bing:
+    verify: 1234567890
+github: Sitename
+linkedin: sitename
+
+top_message:
+logo_text: Werner Glinka
+footer_background_image:
+---
+
+<!doctype html>
+<html lang="en" itemscope itemtype=”http://schema.org/Article”>
+  <head>
+    {% include "head.html" %}
+  </head>
+
+  <body>
+    {% include "browser-upgrade.html" %}
+
+    {% if top_message %}
+        {% include "top-message.html" %}
+    {% endif %}
+
+    {% include "header.html" %}
+
+    <div class="content-wrapper">
+
+        <ul class="main-slides">
+            <li><img src="/assets/images/header/header4.jpg"></li>
+            <li class="title"><h1>Assemblage Redux</h1></li>
+        </ul>
+
+        <div class="container">
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis.
+
+Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus.
+
+        </div>
+    </div>
+
+    {% block footer %}
+        {% include "footer.html" %}
+    {% endblock %}
+
+    {% block to_top %}
+        <div id="toTop"><i class="icon icon-chevron-north"></i></div>
+    {% endblock %}
+
+    {% block body_scripts %}
+        {% include "scripts.html" %}
+    {% endblock %}
+
+  </body>
+</html>
