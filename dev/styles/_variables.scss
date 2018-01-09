@@ -18,7 +18,7 @@ $title-font-family:                         'Montserrat', sans-serif;
 $default-font-size:                         100%;
 
 // typography
-$default-text-color:                        #333;
+$default-text-color:                        #626262;
 $light-text-color:                          #fff;
 $default-bg-color:                          #fff;
 $default-link-color:                        #f00;
@@ -26,6 +26,7 @@ $active-link-color:                         $default-link-color;
 $default-hover-color:                       #f00;
 $default-dimmed-color:                      #999;
 $default-disabled-color:                    #ccc;
+$section-header-color:                      #333;
 
 
 // site structure
@@ -36,7 +37,7 @@ $top-message-bg-color:                      rgba(51,51,51,0.7);
 
 // header
 $header-height:                             80px;
-$header-bg-color:                           rgba(51,51,51,0.5);
+$header-bg-color:                           rgba(51,51,51,0.7);
 $small-screen-menu-bg-color:                rgba(51,51,51,0.97);
 $header-bg-color-no-opacity:                rgba(51,51,51,1);
 
@@ -66,7 +67,7 @@ $banner-height:                             400px;
 $light-banner-bg-color:                     rgba(255,255,255,0.8);
 
 // borders
-$default-border:                            1px solid #ccc;
+$default-border:                            1px solid #f0f0f0;
 
 // footer
 $footer-bg-color:                           rgba(51,51,51,1);

@@ -21,6 +21,7 @@ body {
 }
 h1, h2, h3, h4 {
     font-family: $title-font-family;
+    color: #c5c5c5;
 }
 h1 {
     font-size: 1.75em;
@@ -47,10 +48,10 @@ p {
     color: $default-text-color;
     font-size: 1em;
     line-height: 1.4;
-    font-weight: 300;
 
-    &.center {
-        text-align: center;
+    &.attribution {
+        font-size: 80%;
+        font-style: italic;
     }
 }
 
@@ -187,4 +188,7 @@ blockquote {
     .narrow-screen-only {
         display: block;
     }
+}
+.has-border {
+    border: $default-border;
 }

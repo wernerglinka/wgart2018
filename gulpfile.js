@@ -132,17 +132,24 @@ gulp.task('vendorScripts', function() {
         .pipe(gulp.dest(path.join(__dirname, assetPath, 'assets/scripts')))
 });
 
+var jsOrder = [
+          path.join(__dirname, scriptPath, 'ready.js'),
+          path.join(__dirname, scriptPath, 'modules/touchClick.js'),
+          path.join(__dirname, scriptPath, 'modules/externalLinks.js'),
+          path.join(__dirname, scriptPath, 'modules/mobileMenu.js'),
+          path.join(__dirname, scriptPath, 'modules/scrollHomeNav.js'),
+          path.join(__dirname, scriptPath, 'modules/mainNav.js'),
+          path.join(__dirname, scriptPath, 'modules/scrollToTop.js')
+        ];
+
+
 gulp.task('scripts', function () {
     return gulp.src(path.join(__dirname, scriptPath, '**/*.js'))
         .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(order([
-          path.join(__dirname, scriptPath, 'ready.js'),
-          path.join(__dirname, scriptPath, 'modules/touchClick.js'),
-          path.join(__dirname, scriptPath, 'modules/loadMainSlider.js')
-        ]))
+        .pipe(order(jsOrder))
         .pipe(concat('main.js'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.join(__dirname, assetPath, 'assets/scripts')));
@@ -217,7 +224,11 @@ gulp.task('productionScripts', function () {
         .pipe(order([
           path.join(__dirname, scriptPath, 'ready.js'),
           path.join(__dirname, scriptPath, 'modules/touchClick.js'),
-          path.join(__dirname, scriptPath, 'modules/loadMainSlider.js')
+          path.join(__dirname, scriptPath, 'modules/externalLinks.js'),
+          path.join(__dirname, scriptPath, 'modules/mobileMenu.js'),
+          path.join(__dirname, scriptPath, 'modules/scrollHomeNav.js'),
+          path.join(__dirname, scriptPath, 'modules/scrollNav.js'),
+          path.join(__dirname, scriptPath, 'modules/scrollToTop.js')
         ]))
         .pipe(concat('main.js'))
         .pipe(gulp.dest(path.join(__dirname, assetPath, 'assets/scripts')));

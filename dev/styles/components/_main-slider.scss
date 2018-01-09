@@ -14,6 +14,7 @@
         &.title {
             z-index: 2;
             top: 40%;
+            height: auto;
 
             h1 {
                 max-width: $max-page-width;
@@ -34,7 +35,6 @@
                 @media (max-width: 600px) {
                     font-size: 8vw;
                 }
-
             }
         }
 
