@@ -26,7 +26,7 @@ var assetPath = "./dev/sources";
 var scriptPath = "./dev/scripts";
 var stylePath = "./dev/styles";
 var partialsPath = "./dev/partials";
-var destPath = "./publish";
+var destPath = "./build";
 
 // assets
 var sequence = require('gulp-sequence');
