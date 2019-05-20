@@ -1,27 +1,65 @@
----
-title: Werner Glinka Art
-locale: en_US
-url: http://www.wernerglinka.com
-description: Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.
-name: wernerglinka
-email: wg@wernerglinka.comcom
-logo_text: Werner Glinka
----
 
 <!doctype html>
 <html lang="en" itemscope itemtype=”http://schema.org/Article”>
   <head>
-    {% include "head.html" %}
+    <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cleartype" content="on">
+<title>Werner Glinka Art</title>
+<meta name="description" content="Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.">
+<meta name="google-site-verification" content="">
+<meta name="msvalidate.01" content="">
+<link rel="shortcut icon" href="/assets/images/site-images/favicon.ico">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="Werner Glinka Art">
+<meta name="twitter:description" content="Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.">
+<meta name="twitter:creator" content="">
+<meta name="twitter:image" content="">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Werner Glinka Art">
+<meta property="og:description" content="Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.">
+<meta property="og:url" content="http://www.wernerglinka.com">
+<meta property="og:site_name" content="Werner Glinka Art">
+<meta property="og:image" content="">
+
+<!-- Schema.org -->
+<meta itemprop=”name” content="Werner Glinka Art">
+<meta itemprop=”description” content="Werner Glinka is a mixed media artist who lives in Minneapolis, Minnesota.">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/styles/main.css">
+
+
   </head>
 
   <body>
-    {% include "browser-upgrade.html" %}
+    <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
-    {% if top_message %}
-        {% include "top-message.html" %}
-    {% endif %}
+    
 
-    {% include "header.html" %}
+    <header class="page-header clearfix">
+    <div class="container clearfix">
+        <span class="main-logo" >Werner Glinka</span>
+        <a class="hamburger" href="#"><span></span></a>
+        <nav class="main-navigation  clearfix">
+            <ul class="main-menu list-unstyled">
+                <li><a href="#artwork">Artwork</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 
     <div class="content-wrapper">
 
@@ -117,13 +155,14 @@ logo_text: Werner Glinka
 
     </div>
 
-    {% block to_top %}
+    
         <div id="toTop"><i class="icon icon-chevron-north"></i></div>
-    {% endblock %}
+    
 
-    {% block body_scripts %}
-        {% include "scripts.html" %}
-    {% endblock %}
+    
+        <script src="/assets/scripts/vendors.min.js"></script>
+<script src="/assets/scripts/main.js"></script>
+    
 
   </body>
 </html>

@@ -187,7 +187,7 @@ gulp.task('default', ['buildDev'], function () {
 
   browserSync.init({
     server: {
-      baseDir: "publish"
+      baseDir: "build"
     },
     open: false
   });
